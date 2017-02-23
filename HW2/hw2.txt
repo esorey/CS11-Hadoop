@@ -1,0 +1,10 @@
+MapReduce
+
+MapReduce is a paradigm for dealing with large amounts of data in a parallelized way. Each map task operates on some portion of the input data and emits key value pairs. The pairs from all map tasks are then fed into the reducer(s), where they are aggregated to produce a single output - the final result of the MapReduce job.
+
+PageRank
+
+PageRank is a link analysis algorithm that is used to determine the relative importance of nodes in a graph (traditionally web pages on the internet). The key assumption is that more important pages receive more links from other pages. The algorithm works by modeling a web surfer who starts at a random page on the web and follows page links. On each page, there is a chance that he will still stop clicking links and will instead hop to a new random page. One way to compute PageRank is to write down the transition matrix for this system and compute its steady state. 
+
+One example of how PageRank can be used outside of Google Search is in ranking the relative importance of airports. In this context, the algorithm would model a flyer starting at a random airport and then flying randomly to other airports. At each stop, there is a chance that he will opt to drive to a new random airport to start the process again. Once this system converges, we will know the most important airports with respect to the globe’s transportation network.
+
